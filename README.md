@@ -32,9 +32,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O pomodoro Ignite Timer se baseia na ideia de dividir o fluxo de tarefas em blocos de tempos para concentração intensa, conseguindo melhorar a agilidade do cérebro e estimular o foco. A aplicação contém as seguintes funcionalidades:
+O pomodoro Ignite Timer se baseia na ideia de dividir o fluxo de tarefas em blocos de tempos para concentração intensa, conseguindo melhorar a agilidade do cérebro e estimular o foco. 
 
-- Executar uma nova tarefa poreenchendo um formulário adicionando titulo e tempo
+A aplicação contém as seguintes funcionalidades:
+
+- Executar uma nova tarefa preenchendo um formulário adicionando titulo e tempo
 - Armazenar e Exibir histórioco de tarefas realizados
 - Remover as tarefas da listagem do histórico
 - Validação de dados no formulário
