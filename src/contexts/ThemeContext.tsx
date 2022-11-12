@@ -44,7 +44,3 @@ export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
     </ThemeProvider>
   )
 }
-
-// export function useTheme() {
-//   return useContext(ThemeContext)
-// }
