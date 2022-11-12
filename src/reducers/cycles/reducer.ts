@@ -11,7 +11,7 @@ export interface Cycle {
 }
 
 interface CycleState {
-  cycles: Cycle[] | undefined;
+  cycles: Cycle[];
   activeCycleId: string | null;
 }
 
