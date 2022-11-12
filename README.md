@@ -36,7 +36,7 @@ O pomodoro Ignite Timer se baseia na ideia de dividir o fluxo de tarefas em bloc
 
 A aplicação contém as seguintes funcionalidades:
 
-- Executar uma nova tarefa preenchendo um formulário
+- Executar um novo bloco ao preencher o formulário
 - Armazenar e Exibir histórico de tarefas realizados
 - Remover as tarefas da listagem do histórico
 - Validação de dados no formulário
