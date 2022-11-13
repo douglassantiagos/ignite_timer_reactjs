@@ -28,6 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ▪ <a href="https://date-fns.org/docs/Getting-Started">Date-fns</a>
 ▪ <a href="https://phosphoricons.com/">Phosphor-react</a>
 ▪ <a href="https://immerjs.github.io/immer/">Immer</a>
+▪ <a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification">Notification API</a>
 ▪ <a href="https://github.com/colinhacks/zod">Zod</a>
 
 ## 💻 Projeto
@@ -36,10 +37,11 @@ O pomodoro Ignite Timer se baseia na ideia de dividir o fluxo de tarefas em bloc
 
 A aplicação contém as seguintes funcionalidades:
 
-- Executar uma nova tarefa preenchendo um formulário
+- Executar um novo bloco ao preencher o formulário
 - Armazenar e Exibir histórico de tarefas realizados
 - Remover as tarefas da listagem do histórico
 - Validação de dados no formulário
+- Notificação ao termino do bloco
 - Tema dark e light
 - Armazenamento local
 
@@ -49,7 +51,7 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 ## :link: Link
 
-<a href="" target="_blank" rel="nofollow">
+<a href="https://ignite-timer-project.vercel.app/" target="_blank" rel="nofollow">
   <img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" style="max-width: 100%;">
 </a>
 
