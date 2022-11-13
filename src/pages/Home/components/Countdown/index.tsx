@@ -3,8 +3,11 @@ import { useContext, useEffect } from 'react';
 import { CyclesContext } from '../../../../contexts/CyclesContext';
 import { CountdownContainer, Separator } from './styled'
 
+import iconTimer from '../../../../../public/timer.svg'
+
 export function Countdown() {
-  const { 
+  const {
+    cycles,
     activeCycle, 
     activeCycleId, 
     amountSecondsPassed, 
@@ -13,6 +16,28 @@ export function Countdown() {
   } = useContext(CyclesContext);  
 
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0;
+
+  const currentCycleMinutesAmount = cycles.map(cycle => cycle.minutesAmount)
+  console.log(currentCycleMinutesAmount)
+
+  function checkPermission() {
+    return Notification.requestPermission()
+      .then(status => status === 'granted')
+  }
+
+  function sendNotification() {
+    checkPermission().then(isAllowed => {
+      if (!isAllowed) {        
+        alert("Este browser não suporta notificações de Desktop")
+        return;
+      }
+
+      new Notification(`Bloco de ${currentCycleMinutesAmount.at(-1)} minutos Finalizado!`, {
+        body: `Pronto para iniciar um novo bloco?`,
+        icon: iconTimer,
+      })
+    })
+  }
 
   useEffect(() => {
     let interval: number;
@@ -27,6 +52,7 @@ export function Countdown() {
         if (secondsDifference >= totalSeconds) {
           markCurrentCycleAsFinished()
           setSecondsPassed(totalSeconds)
+          sendNotification()
           clearInterval(interval)
         } else {
           setSecondsPassed(secondsDifference)
