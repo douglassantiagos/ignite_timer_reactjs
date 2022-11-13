@@ -28,6 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ▪ <a href="https://date-fns.org/docs/Getting-Started">Date-fns</a>
 ▪ <a href="https://phosphoricons.com/">Phosphor-react</a>
 ▪ <a href="https://immerjs.github.io/immer/">Immer</a>
+▪ <a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification">Notification API</a>
 ▪ <a href="https://github.com/colinhacks/zod">Zod</a>
 
 ## 💻 Projeto
@@ -40,6 +41,7 @@ A aplicação contém as seguintes funcionalidades:
 - Armazenar e Exibir histórico de tarefas realizados
 - Remover as tarefas da listagem do histórico
 - Validação de dados no formulário
+- Notificação ao termino do bloco
 - Tema dark e light
 - Armazenamento local
 
