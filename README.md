@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="toDoList" src="https://imgur.com/E0brUxs.png" width="100%">
+  <img alt="ignite-timer" src="https://imgur.com/E0brUxs.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
