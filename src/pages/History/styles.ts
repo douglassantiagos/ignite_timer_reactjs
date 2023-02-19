@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import PerfectScrollbar from "@opuscapita/react-perfect-scrollbar";
 
 export const HistoryContainer = styled.div`
   flex: 1;
@@ -14,7 +13,7 @@ export const HistoryContainer = styled.div`
   }
 `
 
-export const HistoryList = styled(PerfectScrollbar)`
+export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
   margin-top: 2rem;
