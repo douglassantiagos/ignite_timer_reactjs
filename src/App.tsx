@@ -6,6 +6,8 @@ import { GlobalStyles } from './styles/global'
 import { CyclesContextProvider } from './contexts/CyclesContext'
 import { ThemeContextProvider } from './contexts/ThemeContext'
 
+import 'react-perfect-scrollbar/dist/css/styles.css';
+
 export function App() {
   return (
     <ThemeContextProvider>

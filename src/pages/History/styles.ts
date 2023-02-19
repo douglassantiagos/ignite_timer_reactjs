@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PerfectScrollbar from "react-perfect-scrollbar";
 
 export const HistoryContainer = styled.div`
   flex: 1;
@@ -13,7 +14,7 @@ export const HistoryContainer = styled.div`
   }
 `
 
-export const HistoryList = styled.div`
+export const HistoryList = styled(PerfectScrollbar)`
   flex: 1;
   overflow: auto;
   margin-top: 2rem;
@@ -22,6 +23,16 @@ export const HistoryList = styled.div`
   .ps__thumb-y {
     background-color: ${props => props.theme["green-500"]};
     width: 4px;
+  }
+
+  .ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__rail-y.ps--clicking .ps__thumb-y {
+    background-color: ${props => props.theme["green-500"]};
+    width: 4px;
+  }
+
+  .ps__rail-y:hover {
+    background-color: transparent;
+
   }
 
   table {
